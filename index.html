@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Shayla Morgansen: Burned and the Elm Stone Saga</title>
+<meta name="description" content="A homepage idea for Shayla Morgansen's Burned, a prequel tale from the Elm Stone Saga. Made by Sparsh Saini. Not her official site.">
+<meta property="og:title" content="Burned, by Shayla Morgansen: a homepage idea">
+<meta property="og:description" content="A homepage idea made by Sparsh Saini for Shayla Morgansen. Not her official site.">
+<meta property="og:image" content="https://sparshsainied-prog.github.io/shaylamorgansen/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;1,400&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#eee8da; --paper-2:#e4d8c6; --char:#1a0f0a; --char-2:#2a1710;
+  --ink:#2b1a12; --red:#b3141b; --red-hi:#e0242b; --slate:#3e4861;
+  --teal:#0b2f3d; --teal-2:#124457; --gold:#d9b45c; --ember:#e8571c;
+  --uncial:"Uncial Antiqua","Alegreya",Georgia,serif;
+  --text:"Alegreya",Georgia,serif;
+  --strip:34px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--text);font-size:19px;line-height:1.55}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.strip{min-height:var(--strip);background:var(--char);color:#f0e4d2;font:500 14px/1.3 var(--text);padding:8px 16px;text-align:center;letter-spacing:.01em}
+
+/* ---------- hero ---------- */
+.hero{position:relative;height:380vh}
+.stage{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--paper);--sw:min(100vw,calc((100svh - 240px) * .6388))}
+.name{position:absolute;left:16px;top:10px;z-index:5;font:400 17px/1 var(--uncial);color:var(--slate);text-decoration:none;letter-spacing:.02em}
+.nav{display:none}
+.facts-l{display:none}
+.sheet{position:absolute;left:50%;top:40px;width:var(--sw);aspect-ratio:1569/2456;margin-left:calc(var(--sw) / -2);transform-origin:50.4% 50.4%}
+.pl{color:transparent;font-size:0;position:absolute;display:block;height:auto;max-width:none;pointer-events:none;user-select:none}
+.plate{left:0;top:0;width:100%}
+.scorch{left:4.908%;top:26.832%;width:83.493%;transform-origin:54.4% 41.8%;transform:scale(.03);opacity:0}
+.core{left:26.259%;top:35.016%;width:46.335%;transform-origin:52.0% 34.7%;transform:scale(.02);opacity:0}
+.fire{left:32.122%;top:36.156%;width:36.711%;transform-origin:49.7% 49.9%;transform:scale(.55);opacity:0}
+.glow{position:absolute;left:18%;top:28%;width:64%;height:44%;border-radius:50%;background:radial-gradient(closest-side,rgba(255,120,30,.55),rgba(255,80,20,.18) 55%,rgba(255,80,20,0));opacity:0;pointer-events:none}
+.ink-top{left:0.000%;top:9.935%;width:93.308%}
+.ink-author{left:5.099%;top:86.360%;width:90.249%}
+.ember{position:absolute;left:50.3%;top:50.4%;width:7px;height:7px;margin:-3.5px 0 0 -3.5px;border-radius:50%;background:#ffb25a;box-shadow:0 0 10px 4px rgba(255,120,30,.85),0 0 26px 10px rgba(232,87,28,.35)}
+.spark{position:absolute;width:4px;height:4px;border-radius:50%;background:#ffa24a;box-shadow:0 0 6px 2px rgba(255,120,30,.8);opacity:0;will-change:transform,opacity}
+.h1{position:absolute;margin:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+.caps{position:absolute;left:0;right:0;top:calc(40px + var(--sw) * 1.5654 + 6px);height:150px;padding:0 20px;text-align:center}
+.cap{position:absolute;left:20px;right:20px;top:0;opacity:0}
+.cap.on{opacity:1}
+.cap b{display:block;font:400 25px/1.15 var(--uncial);color:var(--red)}
+.cap span{display:block;margin-top:6px;font-size:18px;color:var(--ink)}
+.cta{position:absolute;left:20px;right:20px;top:-2px;opacity:0;pointer-events:none;text-align:center}
+.cta.on{opacity:1;pointer-events:auto}
+.cta .tag{font:400 19px/1.25 var(--uncial);color:var(--slate);margin:0 0 12px}
+
+.btn{display:inline-block;font:400 16px/1 var(--uncial);text-decoration:none;color:#f6ead6;padding:13px 18px 12px;border-radius:3px;background:linear-gradient(#d2222a,#9b0f16);border:1px solid #6e0a10;box-shadow:inset 0 0 0 1px rgba(255,200,170,.25),0 1px 0 rgba(0,0,0,.25);text-shadow:0 1px 0 rgba(60,0,0,.6);letter-spacing:.02em}
+.btn.dark{background:radial-gradient(120% 140% at 50% 50%,#2a1710 40%,#6b3512 100%);border-color:#14090400;box-shadow:inset 0 0 14px rgba(200,100,30,.55);color:#f0dcc0;text-shadow:none}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+
+/* ---------- sections ---------- */
+section{position:relative}
+.wrap{max-width:1080px;margin:0 auto;padding:72px 20px}
+h2{font:400 clamp(30px,6.4vw,50px)/1.05 var(--uncial);margin:0 0 18px;letter-spacing:.01em}
+h3{font:400 22px/1.1 var(--uncial);margin:0}
+p{margin:0 0 14px}
+.kicker{font:400 15px/1 var(--uncial);color:var(--ember);margin:0 0 14px;letter-spacing:.04em}
+.small{font-size:16px;opacity:.85}
+
+.saga{background:var(--char);color:#ecdcc6}
+.saga h2{color:#f2e3cc}
+.saga .lede{max-width:34em}
+.saga .first{display:grid;gap:28px;align-items:center}
+.saga .first img{width:min(320px,70%);margin:0 auto;filter:none}
+.saga .first .links{margin-top:18px}
+.row{display:grid;grid-template-columns:repeat(2,1fr);gap:26px 14px;margin-top:54px;align-items:end}
+.row a{text-decoration:none;text-align:center;display:block}
+.row img{width:100%;max-width:210px;margin:0 auto 10px}
+.row h3{font-size:18px;color:#e8d3b4}
+.row .n{display:block;font-size:14px;opacity:.7;margin-top:2px}
+
+.burn{background:var(--paper)}
+.burn .grid{display:grid;gap:30px}
+.burn img.cv{width:min(300px,70%);margin:0 auto;border-radius:2px;box-shadow:0 10px 26px rgba(60,30,10,.28)}
+.burn h2{color:var(--red)}
+.burn .note{border-left:3px solid var(--ember);padding:2px 0 2px 14px;font-size:16px;margin:18px 0}
+
+.kin{background:var(--teal);color:#dfeaec}
+.kin h2{color:var(--gold)}
+.kin .kicker{color:var(--gold)}
+.kin .grid{display:grid;gap:36px}
+.kin .main img{width:min(300px,64%);margin:0 auto 18px}
+.kin .more{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:end}
+.kin .more a{text-decoration:none;text-align:center}
+.kin .more img{max-width:190px;margin:0 auto 8px}
+.kin .more h3{font-size:17px;color:#f0e4c4}
+.kin .btn{background:linear-gradient(#e2c06c,#b99238);border-color:#7d6120;color:#1f1608;text-shadow:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+.kin .tagline{font:400 22px/1.2 var(--uncial);color:#f0e4c4;margin:0 0 16px}
+
+.about{background:var(--paper-2)}
+.about .wrap{max-width:720px}
+.about h2{color:var(--slate)}
+.about .facts{margin:22px 0 0;padding:0;list-style:none;border-top:1px solid rgba(43,26,18,.25)}
+.about .facts li{padding:10px 0;border-bottom:1px solid rgba(43,26,18,.2)}
+.about .facts b{font:400 14px/1 var(--uncial);color:var(--red);display:block;margin-bottom:3px;letter-spacing:.03em}
+
+.close{background:var(--char);color:#ecdcc6;text-align:center}
+.close h2{color:#f2e3cc}
+.close .wrap{max-width:720px}
+.close .btns{margin-top:22px}
+
+footer{background:#0f0805;color:#cdbca5;font-size:15px;text-align:center;padding:22px 16px 28px}
+
+/* ---------- desktop ---------- */
+.saga .first,.burn .grid,.kin .grid{grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){
+  .name{left:32px;top:22px;font-size:20px}
+  .nav{display:flex;position:absolute;right:32px;top:24px;z-index:5;gap:24px;font:400 14px/1 var(--uncial);color:var(--slate)}
+  .nav a{text-decoration:none}
+  .stage{--sw:calc((100svh - 96px) * .6388)}
+  .sheet{top:48px}
+  .facts-l{display:block;position:absolute;left:32px;top:calc(48px + var(--sw) * 1.5654 * .38);width:calc(50vw - var(--sw)/2 - 80px);margin:0;padding:0;list-style:none}
+  .facts-l li{padding:12px 0;border-top:1px solid rgba(62,72,97,.3);font-size:19px}
+  .facts-l li:last-child{border-bottom:1px solid rgba(62,72,97,.3)}
+  .facts-l b{display:block;font:400 13px/1 var(--uncial);color:var(--red);margin-bottom:4px;letter-spacing:.04em}
+  .caps{left:50%;right:auto;top:auto;bottom:auto;height:auto;width:calc(50vw - var(--sw)/2 - 60px);margin-left:calc(var(--sw)/2 + 40px);padding:0;text-align:left;top:calc(48px + var(--sw) * 1.5654 * .38);height:260px}
+  .cap{left:0;right:0}
+  .cap b{font-size:36px}
+  .cap span{font-size:21px;max-width:20em}
+  .cta{left:0;right:0;top:0;text-align:left}
+  .cta .tag{font-size:26px}
+  .btns{justify-content:flex-start}
+  .saga .first{grid-template-columns:340px 1fr;gap:64px}
+  .saga .first img{width:100%}
+  .row{grid-template-columns:repeat(4,1fr);gap:30px}
+  .burn .grid{grid-template-columns:1fr 330px;gap:64px;align-items:center}
+  .burn .grid .cv{order:2}
+  .kin .grid{grid-template-columns:340px 1fr;gap:64px;align-items:start}
+  .kin .main img{width:100%}
+  .wrap{padding:104px 32px}
+}
+@media (max-width:899px){
+  .row{grid-template-columns:repeat(2,1fr)}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero{height:auto}
+  .stage{position:relative}
+}
+</style>
+</head>
+<body>
+<div class="strip">A homepage idea made by Sparsh Saini for Shayla Morgansen. Not their official site.</div>
+
+<header class="hero" id="hero">
+  <div class="stage" id="stage">
+    <a class="name" href="#top">Shayla Morgansen</a>
+    <nav class="nav" aria-label="Sections"><a href="#saga">The Elm Stone Saga</a><a href="#burned">Burned</a><a href="#kin">Shadow Kin</a><a href="#about">About</a></nav>
+    <div class="sheet" id="sheet">
+      <img class="pl plate" src="img/plate.webp" alt="" width="1569" height="2456">
+      <img class="pl scorch" id="scorch" src="img/scorch.webp" alt="" width="1332" height="1386">
+      <img class="pl core" id="core" src="img/core.webp" alt="" width="725" height="1087">
+      <div class="glow" id="glow"></div>
+      <img class="pl fire" id="fire" src="img/fire.webp" alt="" width="576" height="701">
+      <img class="pl ink-top" src="img/ink-top.webp" alt="Burned. The Elm Stone Saga, a prequel tale." width="1464" height="890">
+      <img class="pl ink-author" src="img/ink-author.webp" alt="Shayla Morgansen" width="1416" height="254">
+      <div class="ember" id="ember"></div>
+      <div id="sparks" aria-hidden="true"></div>
+      <h1 class="h1">Burned, a prequel tale by Shayla Morgansen</h1>
+    </div>
+    <ul class="facts-l"><li><b>The Elm Stone Saga</b>A prequel tale, three years before Chosen</li><li><b>Length</b>Ten thousand words</li><li><b>Proceeds</b>Donated to WIRES, as her book page says</li></ul>
+    <div class="caps" id="caps">
+      <div class="cap on"><b>Three years before Chosen.</b><span>Emmanuelle is a new White Elm councillor, and her first assignment is about to arrive.</span></div>
+      <div class="cap"><b>A bushfire is raging in Australia.</b><span>She and Peter are sent to help with the crisis relief.</span></div>
+      <div class="cap"><b>Sometimes we are forged in fire.</b><span>Other times we are burned.</span></div>
+      <div class="cta" id="cta">
+        <p class="tag">A ten thousand word prequel. All proceeds to WIRES.</p>
+        <div class="btns"><a class="btn" href="https://www.amazon.com.au/dp/B083QHN391">Buy on Amazon AU</a><a class="btn dark" href="#saga">The whole saga</a></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="saga" id="saga">
+  <div class="wrap">
+    <p class="kicker">The Elm Stone Saga</p>
+    <div class="first">
+      <img src="img/chosen.webp" alt="Chosen, The Elm Stone Saga book 1, by Shayla Morgansen" width="560" height="755">
+      <div>
+        <h2>Chosen</h2>
+        <p class="lede"><i>Sometimes we choose our way. Other times it is chosen for us.</i></p>
+        <p class="lede">The White Elm council has governed the magical societies of the world for centuries. When powerful Lisandro announces he is leaving, the Elm Stone, a ring holding years of the council's power, is taken by its keeper to his new group of malicious magic users.</p>
+        <p class="lede">Young Irish sorceress Aristea Byrne competes for a place as an apprentice to the White Elm, and starts to wonder how much is still within her control and how much has been chosen for her.</p>
+        <div class="btns links" style="justify-content:flex-start"><a class="btn" href="https://www.amazon.com.au/dp/B01GAMC0PY">Amazon AU</a><a class="btn" href="https://books.apple.com/au/book/chosen/id867840016">Apple Books</a><a class="btn dark" href="https://www.shaylamorgansen.com/chosen">All stores</a></div>
+      </div>
+    </div>
+    <div class="row">
+      <a href="https://www.shaylamorgansen.com/scarred"><img src="img/scarred.webp" alt="Scarred" width="560" height="755"><h3>Scarred</h3></a>
+      <a href="https://www.shaylamorgansen.com/unbidden"><img src="img/unbidden.webp" alt="Unbidden" width="560" height="755"><h3>Unbidden</h3></a>
+      <a href="https://www.shaylamorgansen.com/haunted"><img src="img/haunted.webp" alt="Haunted" width="560" height="755"><h3>Haunted</h3></a>
+      <a href="https://www.shaylamorgansen.com/fractured"><img src="img/fractured.webp" alt="Fractured" width="560" height="759"><h3>Fractured</h3></a>
+    </div>
+  </div>
+</section>
+
+<section class="burn" id="burned">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <p class="kicker">A prequel tale</p>
+        <h2>All proceeds to WIRES.</h2>
+        <p>Burned is a ten thousand word short story that sits three years before Chosen. When Emmanuelle and Peter are finally sent on their first assignment together, it is to help with crisis relief for a bushfire raging in Australia. She begins to find her voice and purpose, and Fate's.</p>
+        <p>Her book page says all proceeds of the ebook will be donated to WIRES (Wildlife Information Rescue and Education Service) and their work rescuing and rehabilitating wildlife affected by the Australian bushfires.</p>
+        <p class="note">It contains references to animals hurt in bushfire conditions, which may be disturbing to some younger readers.</p>
+        <div class="btns" style="justify-content:flex-start"><a class="btn" href="https://www.amazon.com.au/dp/B083QHN391">Amazon AU</a><a class="btn" href="https://www.shaylamorgansen.com/burned-1">All stores</a></div>
+      </div>
+      <img class="cv" src="img/burned-cover.jpg" alt="Burned: a prequel tale, cover" width="640" height="1002">
+    </div>
+  </div>
+</section>
+
+<section class="kin" id="kin">
+  <div class="wrap">
+    <p class="kicker">Shadow Kin Chronicles</p>
+    <div class="grid">
+      <div class="main">
+        <img src="img/mythos.webp" alt="Mythos Unbound, Shadow Kin Chronicles book 1" width="431" height="716">
+        <div class="btns"><a class="btn" href="https://www.shaylamorgansen.com/mythos-unbound">Mythos Unbound</a><a class="btn" href="https://www.goodreads.com/book/show/216356516-mythos-unbound">Goodreads</a></div>
+      </div>
+      <div>
+        <h2>Mythos Unbound</h2>
+        <p class="tagline">Would you know a monster if you saw one?</p>
+        <p>Finn Bryant lectures in mythology by day and moonlights as a supernatural hunter, tracking the glamoured Shadow Kin he alone sees walking among us. His sister Evie profiles serial killers for the FBI and does not see the supernatural at all.</p>
+        <p>When a series of brutal murders with a mythological overtone has Evie consulting with Finn, the siblings find themselves hunting the same killer. But whose monster is it?</p>
+        <p class="small">An adult urban fantasy with horror and forensic elements. Minimal romance, moderate stabbiness, maximum story.</p>
+        <div class="more" style="margin-top:34px;max-width:420px">
+          <a href="https://www.shaylamorgansen.com/legend-unwritten"><img src="img/legend.webp" alt="Legend Unwritten" width="356" height="629"><h3>Legend Unwritten</h3></a>
+          <a href="https://www.shaylamorgansen.com/echoes-of-the-moors"><img src="img/echoes.webp" alt="Echoes of the Moors" width="560" height="733"><h3>Echoes of the Moors</h3></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <p class="kicker">About</p>
+    <h2>Magical happenings in ordinary places.</h2>
+    <p>Shayla writes lengthy books about the supernatural crossing paths with the everyday. Her favourite themes are interdependency, found families, us against the world, and a good helping of angst.</p>
+    <ul class="facts">
+      <li><b>Home</b>Brisbane, with her husband, daughter and two naughty white cats.</li>
+      <li><b>Before the books</b>Schoolteacher, editor, assistant publisher and lecturer.</li>
+      <li><b>Fandoms</b>The X-Files, Dexter, Stargate SG-1, Star Wars, Supernatural, Fringe, Sherlock and Farscape.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="close">
+  <div class="wrap">
+    <h2>There's a little magic in all of us.</h2>
+    <p>Her mailing list, her Instagram and her shop, all linked from her own site.</p>
+    <div class="btns"><a class="btn" href="https://mailchi.mp/292da53c3d1b/shaylamorgansen">Join the mailing list</a><a class="btn dark" href="https://www.instagram.com/shaylawritesmagic/">@shaylawritesmagic</a><a class="btn dark" href="https://www.shaylamorgansen.com/category/all-products">Shop</a></div>
+  </div>
+</section>
+</main>
+
+<footer>A mockup made by Sparsh Saini for Shayla Morgansen. Not affiliated, not live.</footer>
+
+<script>
+(function(){
+  var hero=document.getElementById('hero'),sheet=document.getElementById('sheet');
+  var scorch=document.getElementById('scorch'),core=document.getElementById('core'),fire=document.getElementById('fire');
+  var glow=document.getElementById('glow'),ember=document.getElementById('ember'),sparksBox=document.getElementById('sparks');
+  var caps=document.querySelectorAll('.cap'),cta=document.getElementById('cta');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function seg(p,a,b){return p<=a?0:p>=b?1:(p-a)/(b-a)}
+  function ease(x){return x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2}
+  var sparks=[],N=10,i,H=0;
+  for(i=0;i<N;i++){var s=document.createElement('i');s.className='spark';
+    s.style.left=(40+((i*37)%24))+'%';s.style.top=(45+((i*53)%14))+'%';sparksBox.appendChild(s);sparks.push(s)}
+  function measure(){H=sheet.offsetHeight}
+  var last=-1;
+  function render(p){
+    var h=ease(seg(p,.03,.62));
+    scorch.style.transform='scale('+(0.03+0.97*h).toFixed(4)+')';
+    scorch.style.opacity=Math.min(1,seg(p,0,.07)*1);
+    var c=ease(seg(p,.2,.74));
+    core.style.transform='scale('+(0.02+0.98*c).toFixed(4)+')';
+    core.style.opacity=seg(p,.2,.3);
+    var f=seg(p,.52,.86);
+    fire.style.transform='scale('+(0.55+0.45*ease(f)).toFixed(4)+')';
+    fire.style.opacity=seg(p,.52,.8);
+    glow.style.opacity=(seg(p,.45,.8)*(1-.55*seg(p,.8,1))).toFixed(3);
+    ember.style.opacity=(1-seg(p,.04,.22)).toFixed(3);
+    ember.style.transform='scale('+(1+3*seg(p,0,.1)).toFixed(3)+')';
+    sheet.style.transform='scale('+(1.045-0.045*ease(p)).toFixed(4)+')';
+    for(var k=0;k<N;k++){
+      var t=seg(p,.64+.018*k,1),el=sparks[k];
+      if(t<=0){el.style.opacity=0;continue}
+      var dx=Math.sin(t*5+k)*H*.02+(k-4.5)*H*.006,dy=-t*H*(.1+.035*k);
+      el.style.transform='translate3d('+dx.toFixed(1)+'px,'+dy.toFixed(1)+'px,0)';
+      el.style.opacity=(Math.sin(Math.PI*Math.min(1,t))*.9).toFixed(2);
+    }
+    var on=p<.31?0:p<.64?1:p<.9?2:-1;
+    for(var j=0;j<caps.length;j++)if(caps[j].classList)caps[j].classList.toggle('on',j===on);
+    cta.classList.toggle('on',p>=.9);
+  }
+  function tick(){
+    var r=hero.getBoundingClientRect(),span=hero.offsetHeight-window.innerHeight;
+    var p=span>0?Math.min(1,Math.max(0,-r.top/span)):1;
+    if(Math.abs(p-last)>.0004){last=p;render(p)}
+  }
+  measure();
+  if(reduce){render(1);return}
+  var ticking=false;
+  function onScroll(){if(!ticking){ticking=true;requestAnimationFrame(function(){ticking=false;tick()})}}
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',function(){measure();last=-1;tick()});
+  render(0);tick();
+})();
+</script>
+</body>
+</html>
